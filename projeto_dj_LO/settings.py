@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'receitas_LO',
 ]
 
 MIDDLEWARE = [
@@ -54,7 +55,9 @@ ROOT_URLCONF = 'projeto_dj_LO.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            BASE_DIR/'base_tempates',
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
